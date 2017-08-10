@@ -1,0 +1,11 @@
+.container 
+{
+	text-align: center;
+	margin-top: auto;
+}
+
+canvas
+{
+	height: auto;
+	width: auto;
+}
