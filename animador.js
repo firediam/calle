@@ -2,8 +2,10 @@
 function inicio()
 {
 	var canvas = document.getElementById("cajita");
-	canvas.height = 400;
-	canvas.width = 700;
+
+	canvas.height = screen.height/1.5;
+	canvas.width = screen.width;
+
 
 	//solo mientras estamos desarrollando
 	canvas.style.backgroundColor = "gray";
@@ -38,7 +40,7 @@ function inicio()
 
 function dibujarCuadros(xReferencia)
 	{
-		for (; xReferencia < canvas.width; xReferencia = xReferencia + separacion) 
+		for (; xReferencia < canvas.width; xReferencia = xReferencia + separacion)
 		{
 			pantalla.fillStyle = "yellow";
 			pantalla.fillRect(xReferencia, yInicial,anchoLineas, altoLineas);
@@ -60,5 +62,3 @@ function dibujarCuadros(xReferencia)
 
 
 }
-
-
